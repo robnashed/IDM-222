@@ -11,7 +11,6 @@ var upArrow = '<i class="fa fa-angle-up"></i>'
     } else{
         isBoxOpen = true;
     }
-    
 
     if (isBoxOpen == true){
         document.getElementById("viewMoreButton").innerHTML = "View Less " + upArrow;
@@ -22,3 +21,8 @@ var upArrow = '<i class="fa fa-angle-up"></i>'
         
 }
 
+$("#aboutbutton").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#skills").offset().top
+    }, 2000);
+});

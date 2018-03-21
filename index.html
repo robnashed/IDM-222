@@ -15,21 +15,21 @@
         <div class="header container">
             <div class="logo"><a href="index.html">Rob Nashed</a></div>
                 <div class="nav container">
-                    <div class="navItem"><a class="active"href="#">Portfolio</a></div>
-                    <div class="navItem"><a href="#skills">Skills/Software</a></div>
-                    <div class="navItem"><a href="#contact">Contact</a></div>
+                    <div class="navItem"><a id="portfolioButton" class="active" href="#">Portfolio</a></div>
+                    <div class="navItem"><a id="aboutButton" href="#skills">About</a></div>
+                    <div class="navItem"><a id="contactButton" href="#contact">Contact</a></div>
                 </div>
             
         </div>
-        <div class="bio container">
-            <div class="bioWrapper">
+        <div class="desc container">
+            <div class="descWrapper">
                 I'm a UX designer with a passion for creating clean, robust, and efficient products.
             </div> 
         </div>
         <div id="portfolioSection" class="portfolio container">
-            <a class="portfolioObject" href="https://robnashed.github.io/zodirap/" target="_blank"><img src="img/zodirap-icon.png"/></a>
-            <a class="portfolioObject" href="http://wifi.solvemedia.com/" target="_blank"><img src="img/wifi-solve.png"/></a>
-            <a class="portfolioObject" href="https://platinumnative.com/"target="_blank"><img src="img/platinum-icon.png"/></a>
+            <a class="portfolioObject" href="https://robnashed.github.io/zodirap/" target="_blank"><img alt="zodirap" src="img/zodirap-icon.png"/></a>
+            <a class="portfolioObject" href="http://wifi.solvemedia.com/" target="_blank"><img alt="wifi.solvemedia" src="img/wifi-solve.png"/></a>
+            <a class="portfolioObject" href="https://platinumnative.com/" target="_blank"><img alt="platinum native" src="img/platinum-icon.png"/></a>
             
      
         </div>
@@ -46,18 +46,43 @@
                 <div class="skillLabel">Photoshop</div><div class="skill"><div class="insideSkill PS"></div></div>
                 <div class="skillLabel">Illustrator</div><div class="skill"><div class="insideSkill AI"></div></div>
             </div>
+
+            <div class="about container">
+                    <div class="aboutTitle">About Me</div>
+                    <div class="aboutImg">
+                        <img class="meImg" alt="a picture of me" src="img/headshot.jpg" />
+                    </div>
+                    <div class="aboutText">Ever since I can remember 
+                        I’ve had a passion for creating. 
+                        While I also enjoy illustration and music making, 
+                        my primary focus is web design and development. 
+                        I became interested in HTML/CSS/JS when I was in junior 
+                        high, where I spent hours a day learning 
+                        how to code online. I was fascinated by the amount of 
+                        possibilities that the internet had to offer, and I 
+                        still am today. I’m currently a sophomore year 
+                        student at Drexel University in Philadelphia, studying Interactive
+                        Digital Media.  </div>
+                </div>
             <div class="contact container" id="contact">
                 <div class="contactTitle">Contact</div>
                     <div class="inputLabel">Name</div><input type="text" class="inputBox" />
-                    <div class="inputLabel">Message</div><input type="text" class="inputBox" />
+                    <div class="inputLabel">Message</div><textarea class="inputBox messageBox"></textarea>
                     <div class="container"><button type="submit" class="contactButton">Send Message</button></div>
                     <div class="orEmailMe">Or email me at robertonashed@gmail.com</div>
                 
             </div>
+            
 
             <footer>Rob Nashed 2018</footer>
     </div>
     
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+ 
+
     <script src="js/main.js"></script>
    
 </body>
