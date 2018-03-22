@@ -56,21 +56,19 @@
                         I’ve had a passion for creating. 
                         While I also enjoy illustration and music making, 
                         my primary focus is web design and development. 
-                        I became interested in HTML/CSS/JS when I was in junior 
-                        high, where I spent hours a day learning 
-                        how to code online. I was fascinated by the amount of 
-                        possibilities that the internet had to offer, and I 
-                        still am today. I’m currently a sophomore year 
+                       I’m currently a sophomore year 
                         student at Drexel University in Philadelphia, studying Interactive
                         Digital Media.  </div>
                 </div>
             <div class="contact container" id="contact">
                 <div class="contactTitle">Contact</div>
-                    <div class="inputLabel">Name</div><input type="text" class="inputBox" />
-                    <div class="inputLabel">Message</div><textarea class="inputBox messageBox"></textarea>
-                    <div class="container"><button type="submit" class="contactButton">Send Message</button></div>
+                <form action="mailto:robertonashed@gmail.com" method="post" enctype="text/plain" id="contactForm">
+                    <div class="inputLabel">Name</div><input id="nameInput" name="name" type="text" class="inputBox" />
+                    <div class="inputLabel">Message</div><textarea id="messageInput" name="message" class="inputBox messageBox"></textarea>
+                    <div class="container"><button type="submit" class="contactButton" id="sendMessage" onclick="sendMessage()">Send Message</button><div id="messageSent" class="messageSent">Message Sent!</div></div>
+
                     <div class="orEmailMe">Or email me at <a href="mailto:robertonashed@gmail.com?Subject=New%message" target="_top">robertonashed@gmail.com</a></div>
-                
+                </form> 
             </div>
             
 

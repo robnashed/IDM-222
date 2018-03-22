@@ -2,7 +2,7 @@ var isBoxOpen = false;
 
 function viewMore(){
     var portfolio = document.getElementById("portfolioSection");
-portfolio.classList.toggle("portfolioMore");
+    portfolio.classList.toggle("portfolioMore");
 
 var downArrow = '<i class="fa fa-angle-down"></i>';
 var upArrow = '<i class="fa fa-angle-up"></i>'
@@ -21,8 +21,21 @@ var upArrow = '<i class="fa fa-angle-up"></i>'
         
 }
 
-$("#aboutbutton").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#skills").offset().top
-    }, 2000);
-});
+
+
+function sendMessage(){
+    
+    var messageSent = document.getElementById('messageSent');
+    var form = document.getElementById('contactForm');
+    console.log('Message Sent');
+    messageSent.style.display= "block";
+    form.reset;
+
+        
+}
+
+
+    
+        
+
+
